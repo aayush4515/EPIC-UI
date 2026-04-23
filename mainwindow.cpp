@@ -12,3 +12,15 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_btnClearCommands_clicked()
+{
+    ui->textDisplayCommands->clear();
+}
+
+
+void MainWindow::on_btnCreateCommand_clicked()
+{
+
+}
+
