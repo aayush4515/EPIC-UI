@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/EPIC_UI.dir/link.d CMakeFiles/EPIC_UI.dir/EPIC_UI_autogen/mocs_compilation.cpp.o CMakeFiles/EPIC_UI.dir/main.cpp.o CMakeFiles/EPIC_UI.dir/mainwindow.cpp.o -o EPIC_UI  /usr/lib64/libQt6Widgets.so.6.10.3 /usr/lib64/libQt6Gui.so.6.10.3 /usr/lib64/libGLX.so /usr/lib64/libOpenGL.so /usr/lib64/libQt6Core.so.6.10.3
