@@ -14,43 +14,11 @@
    <string>EPIC UI</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="gridLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>40</y>
-      <width>271</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="lblProgramName">
-       <property name="text">
-        <string>Program Name</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="lblParameter1">
-       <property name="text">
-        <string>Parameter 1</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QPlainTextEdit" name="plainTextEdit"/>
-     </item>
-     <item row="1" column="1">
-      <widget class="QComboBox" name="comboBox"/>
-     </item>
-    </layout>
-   </widget>
    <widget class="QPushButton" name="btnCreateCommand">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>310</y>
+      <x>310</x>
+      <y>340</y>
       <width>141</width>
       <height>26</height>
      </rect>
@@ -95,6 +63,81 @@
      <string>Clear</string>
     </property>
    </widget>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>541</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="lblProgramName">
+       <property name="text">
+        <string>Program Name</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="plainTextEdit">
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>25</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblPRMPAR">
+       <property name="text">
+        <string>PRMPAR</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="boxPRMPAR">
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblNshow">
+       <property name="text">
+        <string>Nshow (Amount of Showers)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="boxShow"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblERange">
+       <property name="text">
+        <string>ERange (Energy Range):</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineRange"/>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -102,7 +145,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>23</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
