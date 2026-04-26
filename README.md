@@ -10,7 +10,7 @@ Download Qt:
 ```sudo dnf install qt-creator qt6-qtbase-devel```
 
 
-Then, create a new build folder \n
+Then, create a new build folder
 
 ```mkdir build```
 
