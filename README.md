@@ -5,18 +5,18 @@ This is a UI for the EPIC SLURM cluster.
 ## Installation:
 This requires the Qt package to build and run.
 
+Download Qt:
+
 ```sudo dnf install qt-creator qt6-qtbase-devel```
 
-Downloads Qt.
 
 Then, create a new build folder \n
 
 ```mkdir build```
-and 
 
 ```cd build```
 
-Now run cmake
+Now, run cmake
 
 ```cmake ..```
 
@@ -25,3 +25,6 @@ Now run cmake
 and run the UI
 
 ```./EPIC-UI```
+
+
+This should work, and launch the application! 
