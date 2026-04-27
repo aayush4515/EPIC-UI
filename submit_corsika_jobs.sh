@@ -5,8 +5,8 @@
 # --- Configuration (edit these) ----------------------------------------------
 
 # TODO: Is this the right path???
-CORSIKA_EXE="$HOME/corsika-78050/run/corsika78050Linux_EPOS_urqmd"   # Full path to CORSIKA binary
-INPUT_DIR="../build/corsika_inputs"         # Directory containing .inp files
+CORSIKA_EXE="$HOME/corsika-78050/run/corsika78050Linux_EPOS_urqmd"   # Full path to your CORSIKA binary
+INPUT_DIR="/home/eu-physics3/EPIC-UI/build/corsika_inputs"         # Directory containing .inp files
 INPUT_EXT="inp"                             # Input file extension
 
 OUTPUT_DIR="../build/output"                # Directory for CORSIKA output files
@@ -15,9 +15,8 @@ LOG_DIR="../build/logs"                     # Directory for SLURM stdout/stderr 
 
 # TODO: Do we actually need these?
 # SLURM settings
-PARTITION="standard"                        # Partition/queue name
+PARTITION="compute"                        # Partition/queue name
 NTASKS=1                                    # CPUs per job
-MEMORY="2G"                                 # Memory per job
 WALLTIME="04:00:00"                         # Max walltime (HH:MM:SS)
 
 # -----------------------------------------------------------------------------
@@ -58,7 +57,6 @@ for INPUT_FILE in "${INPUT_FILES[@]}"; do
 #SBATCH --job-name=corsika_${BASENAME}
 #SBATCH --partition=${PARTITION}
 #SBATCH --ntasks=${NTASKS}
-#SBATCH --mem=${MEMORY}
 #SBATCH --time=${WALLTIME}
 #SBATCH --output=${LOG_OUT}
 #SBATCH --error=${LOG_ERR}
