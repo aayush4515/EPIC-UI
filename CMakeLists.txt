@@ -17,7 +17,11 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+	corsika_input.cpp
+	corsika_input.h
+	corsika_input.ui
 )
+
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(EPIC_UI
