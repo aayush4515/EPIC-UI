@@ -5,7 +5,7 @@
 # --- Configuration (edit these) ----------------------------------------------
 
 # TODO: Is this the right path???
-CORSIKA_EXE="/path/to/corsika_executable"   # Full path to your CORSIKA binary
+CORSIKA_EXE="$HOME/corsika-78050/run/corsika78050Linux_EPOS_urqmd"   # Full path to CORSIKA binary
 INPUT_DIR="../build/corsika_inputs"         # Directory containing .inp files
 INPUT_EXT="inp"                             # Input file extension
 
