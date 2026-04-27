@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>871</width>
+    <height>616</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,9 +30,9 @@
    <widget class="QTextBrowser" name="textDisplayCommands">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>100</x>
       <y>410</y>
-      <width>611</width>
+      <width>541</width>
       <height>71</height>
      </rect>
     </property>
@@ -40,7 +40,7 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>100</x>
       <y>380</y>
       <width>151</width>
       <height>18</height>
@@ -53,7 +53,7 @@
    <widget class="QPushButton" name="btnClearCommands">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>550</x>
       <y>490</y>
       <width>91</width>
       <height>26</height>
@@ -138,14 +138,40 @@
      </item>
     </layout>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>10</y>
+      <width>161</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generate CORSIKA FIle</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnConfigureCorsika">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>40</y>
+      <width>161</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Configure</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>21</height>
+     <width>871</width>
+     <height>23</height>
     </rect>
    </property>
   </widget>

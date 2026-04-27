@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CORSIKA_INPUT</class>
+ <widget class="QDialog" name="CORSIKA_INPUT">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>721</width>
+    <height>653</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>90</y>
+     <width>241</width>
+     <height>476</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="7" column="0">
+     <widget class="QLabel" name="lblPhip">
+      <property name="text">
+       <string>PHIP</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="lblPrmpar">
+      <property name="text">
+       <string>PRMPAR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="0">
+     <widget class="QLabel" name="lblObslev">
+      <property name="text">
+       <string>OBSLEV</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="lblEvtnr">
+      <property name="text">
+       <string>EVTNR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="lblSeed2">
+      <property name="text">
+       <string>SEED 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="lblSeed1">
+      <property name="text">
+       <string>SEED 1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="lblNshow">
+      <property name="text">
+       <string>NSHOW</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="lblRunnr">
+      <property name="text">
+       <string>RUNNR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="lblThetap">
+      <property name="text">
+       <string>THETAP</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="lblErange">
+      <property name="text">
+       <string>ERANGE</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="lblQgsjet">
+      <property name="text">
+       <string>QGSJET</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="lblQgssig">
+      <property name="text">
+       <string>QGSSIG</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="0">
+     <widget class="QLabel" name="lblMagent">
+      <property name="text">
+       <string>MAGNET</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="0">
+     <widget class="QLabel" name="lblHadflg">
+      <property name="text">
+       <string>HADFLG</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineRunnr"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="lblEslope">
+      <property name="text">
+       <string>ESLOPE</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEvtnr"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineNshow"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="linePrmpar"/>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="lineEslope"/>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="lineErange"/>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="lineThetap"/>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="linePhip"/>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="lineSeed1"/>
+    </item>
+    <item row="9" column="1">
+     <widget class="QLineEdit" name="lineSeed2"/>
+    </item>
+    <item row="10" column="1">
+     <widget class="QLineEdit" name="lineQgsjet"/>
+    </item>
+    <item row="11" column="1">
+     <widget class="QLineEdit" name="lineQgssig"/>
+    </item>
+    <item row="12" column="1">
+     <widget class="QLineEdit" name="lineObslev"/>
+    </item>
+    <item row="13" column="1">
+     <widget class="QLineEdit" name="lineMagnet"/>
+    </item>
+    <item row="14" column="1">
+     <widget class="QLineEdit" name="lineHadflg"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>90</y>
+     <width>261</width>
+     <height>476</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="12" column="0">
+     <widget class="QLabel" name="lblDatbas">
+      <property name="text">
+       <string>DATBAS</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="lblDirect">
+      <property name="text">
+       <string>DIRECT</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="0">
+     <widget class="QLabel" name="lblUser">
+      <property name="text">
+       <string>USER</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QLabel" name="lblMaxprt">
+      <property name="text">
+       <string>MAXPRT</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="0">
+     <widget class="QLabel" name="lblDebug">
+      <property name="text">
+       <string>DEBUG</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="lblAtmod">
+      <property name="text">
+       <string>ATMOD</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="lblArrang">
+      <property name="text">
+       <string>ARRANG</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="lblStepfc">
+      <property name="text">
+       <string>STEPFC</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="lblRadnkg">
+      <property name="text">
+       <string>RADNKG</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="lblEcuts">
+      <property name="text">
+       <string>ECUTS</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="lblEctmap">
+      <property name="text">
+       <string>ECTMAP</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="lblElmflg">
+      <property name="text">
+       <string>ELMFLG</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="lblMumult">
+      <property name="text">
+       <string>MUMULT</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="lblLongi">
+      <property name="text">
+       <string>LONGI</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="lblMuaddi">
+      <property name="text">
+       <string>MUADDI</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEcuts"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineMuaddi"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineMumult"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="lineElmflg"/>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="lineStepfc"/>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="lineRadnkg"/>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="lineArrang"/>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="lineAtmod"/>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="lineLongi"/>
+    </item>
+    <item row="9" column="1">
+     <widget class="QLineEdit" name="lineEctmap"/>
+    </item>
+    <item row="10" column="1">
+     <widget class="QLineEdit" name="lineMaxprt"/>
+    </item>
+    <item row="11" column="1">
+     <widget class="QLineEdit" name="lineDirect"/>
+    </item>
+    <item row="12" column="1">
+     <widget class="QLineEdit" name="lineDatbas"/>
+    </item>
+    <item row="13" column="1">
+     <widget class="QLineEdit" name="lineUser"/>
+    </item>
+    <item row="14" column="1">
+     <widget class="QLineEdit" name="lineDebug"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_31">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>40</y>
+     <width>181</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Configure CORSIKA Inputs</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>590</y>
+     <width>94</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Create</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

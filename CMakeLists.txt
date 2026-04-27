@@ -23,6 +23,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(EPIC_UI
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        corsika_input.h corsika_input.cpp corsika_input.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET EPIC_UI APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

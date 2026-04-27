@@ -38,3 +38,27 @@ void MainWindow::on_btnCreateCommand_clicked()
     ui->textDisplayCommands->append(command);
 }
 
+// open up the CORSIKA configurations window
+void MainWindow::on_btnConfigureCorsika_clicked()
+{
+    // Clean up any existing dialog
+    if (corsikaWindow) {
+        corsikaWindow->close();
+        corsikaWindow->deleteLater();
+        delete corsikaWindow;
+    }
+
+    corsikaWindow = new CORSIKA_INPUT(this);
+    corsikaWindow->setWindowTitle("CORSIKA Input Configurations");
+
+    // optional: delete automatically when closed
+    corsikaWindow->setAttribute(Qt::WA_DeleteOnClose);
+
+    // reset pointer when window is destroyed
+    connect(corsikaWindow, &QObject::destroyed, this, [this]() {
+        corsikaWindow = nullptr;
+    });
+
+    corsikaWindow->show();
+}
+
