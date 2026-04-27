@@ -69,3 +69,10 @@ install(TARGETS EPIC_UI
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(EPIC_UI)
 endif()
+
+
+add_custom_target(generate_corsika_template ALL
+    COMMAND ${CMAKE_COMMAND} -E copy
+            ${CMAKE_SOURCE_DIR}/corsika_template.inp
+            ${CMAKE_BINARY_DIR}/corsika_template.inp
+)

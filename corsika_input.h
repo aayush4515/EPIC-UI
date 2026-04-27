@@ -15,6 +15,9 @@ public:
     explicit CORSIKA_INPUT(QWidget *parent = nullptr);
     ~CORSIKA_INPUT();
 
+private slots:
+    void onGenerate();
+
 private:
     Ui::CORSIKA_INPUT *ui;
 };
