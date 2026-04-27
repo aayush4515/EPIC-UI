@@ -10,7 +10,7 @@
 #include <random>
 #include <stdexcept>
 
-// ─── CORSIKA helpers ──────────────────────────────────────────────────────────
+// CORSIKA helpers
 
 struct CorsikaParams {
     int    nshow;
