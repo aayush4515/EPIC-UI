@@ -70,6 +70,7 @@ if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(EPIC_UI)
 endif()
 
+file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/corsika_inputs)
 
 add_custom_target(generate_corsika_template ALL
     COMMAND ${CMAKE_COMMAND} -E copy

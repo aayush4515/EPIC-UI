@@ -114,7 +114,7 @@ void CORSIKA_INPUT::onGenerate()
         return;
     }
 
-    std::string outputPath = "corsika_run_" + std::to_string(nrunner) + ".inp";
+    std::string outputPath = "corsika_inputs/corsika_run_" + std::to_string(nrunner) + ".inp";
 
     try {
         CorsikaParams params { nshow, prmpar, erange, nrunner };
