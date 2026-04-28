@@ -78,6 +78,6 @@ file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/corsika_inputs)
 
 add_custom_target(generate_corsika_template ALL
     COMMAND ${CMAKE_COMMAND} -E copy
-            ${CMAKE_SOURCE_DIR}/corsika_template.inp
-            ${CMAKE_BINARY_DIR}/corsika_template.inp
+            ${CMAKE_SOURCE_DIR}/corsika_template.steer
+            ${CMAKE_BINARY_DIR}/corsika_template.steer
 )
