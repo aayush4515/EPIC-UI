@@ -13,7 +13,7 @@ QGSSIG  T                              QGSJET cross-sections enable
 OBSLEV  228E2                          observation level (in cm)
 MAGNET  19.066  50.628                 Earth's mag. field at detector- Bx & Bz (22/09/2014)
 HADFLG  0  0  0  0  0  2              flags hadr.interact.&fragmentation
-ECUTS   0.05 100.0 100.0 100.0         energy cuts for particles
+ECUTS   0.3  0.3  0.001  0.001
 MUADDI  F                              additional info for muons
 MUMULT  T                              muon multiple scattering angle
 ELMFLG  T   T                          em. interaction flags (NKG,EGS)
