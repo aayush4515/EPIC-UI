@@ -1,105 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>CORSIKA_INPUT</class>
- <widget class="QDialog" name="CORSIKA_INPUT">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>450</width>
-    <height>250</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>CORSIKA Input Configurations</string>
-  </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
-    <widget class="QGroupBox" name="groupBox">
-     <property name="title">
-      <string>Simulation Parameters</string>
-     </property>
-     <layout class="QFormLayout" name="formLayout">
-      <item row="0" column="0">
-       <widget class="QLabel" name="lblRunnr">
-        <property name="text">
-         <string>Run Number (RUNNR)</string>
-        </property>
-        <property name="toolTip">
-         <string>This is how we tell the difference between which shower is which (ie. DAT000001 is hydrogen)</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="lineRunnr">
-        <property name="toolTip">
-         <string>This is how we tell the difference between which shower is which (ie. DAT000001 is hydrogen)</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="lblNshow">
-        <property name="text">
-         <string>Shower Amount (NSHOW)</string>
-        </property>
-        <property name="toolTip">
-         <string>This is how many showers we wish to run in the simulation</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QLineEdit" name="lineNshow">
-        <property name="toolTip">
-         <string>This is how many showers we wish to run in the simulation</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="lblPrmpar">
-        <property name="text">
-         <string>Particle (PRMPAR)</string>
-        </property>
-        <property name="toolTip">
-         <string>This is an integer that correlates with a certain particle isotope</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QLineEdit" name="linePrmpar">
-        <property name="toolTip">
-         <string>This is an integer that correlates with a certain particle isotope</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="lblErange">
-        <property name="text">
-         <string>Energy (ERANGE)</string>
-        </property>
-        <property name="toolTip">
-         <string>This is how much energy the incoming particle has</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="1">
-       <widget class="QLineEdit" name="lineErange">
-        <property name="toolTip">
-         <string>This is how much energy the incoming particle has</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </item>
-   <item>
-    <widget class="QDialogButtonBox" name="buttonBox">
-     <property name="standardButtons">
-      <set>QDialogButtonBox::Ok|QDialogButtonBox::Cancel</set>
-     </property>
-    </widget>
-   </item>
-  </layout>
- </widget>
- <resources/>
- <connections/>
+<class>CORSIKA_INPUT</class>
+<widget class="QDialog" name="CORSIKA_INPUT">
+<property name="geometry">
+<rect>
+<x>0</x>
+<y>0</y>
+<width>480</width>
+<height>550</height>
+</rect>
+</property>
+<property name="windowTitle">
+<string>CORSIKA Input Configurations</string>
+</property>
+<layout class="QVBoxLayout" name="verticalLayout">
+<item>
+<widget class="QGroupBox" name="groupBox">
+<property name="title">
+<string>Simulation Parameters</string>
+</property>
+<layout class="QFormLayout" name="formLayout">
+
+<item row="0" column="0">
+<widget class="QLabel" name="lblRunnr">
+<property name="text">
+<string>Run Number (RUNNR)</string>
+</property>
+<property name="toolTip">
+<string>This is how we tell the difference between which shower is which (ie. DAT000001 is hydrogen)</string>
+</property>
+</widget>
+</item>
+<item row="0" column="1">
+<widget class="QLineEdit" name="lineRunnr">
+<property name="toolTip">
+<string>This is how we tell the difference between which shower is which (ie. DAT000001 is hydrogen)</string>
+</property>
+</widget>
+</item>
+
+<item row="1" column="0">
+<widget class="QLabel" name="lblNshow">
+<property name="text">
+<string>Shower Amount (NSHOW)</string>
+</property>
+<property name="toolTip">
+<string>This is how many showers we wish to run in the simulation</string>
+</property>
+</widget>
+</item>
+<item row="1" column="1">
+<widget class="QLineEdit" name="lineNshow">
+<property name="toolTip">
+<string>This is how many showers we wish to run in the simulation</string>
+</property>
+</widget>
+</item>
+
+<item row="2" column="0">
+<widget class="QLabel" name="lblPrmpar">
+<property name="text">
+<string>Particle (PRMPAR)</string>
+</property>
+<property name="toolTip">
+<string>This is an integer that correlates with a certain particle isotope</string>
+</property>
+</widget>
+</item>
+<item row="2" column="1">
+<widget class="QLineEdit" name="linePrmpar">
+<property name="toolTip">
+<string>This is an integer that correlates with a certain particle isotope</string>
+</property>
+</widget>
+</item>
+
+<item row="3" column="0">
+<widget class="QLabel" name="lblErangeLow">
+<property name="text">
+<string>Energy Low (ERANGELOW)</string>
+</property>
+<property name="toolTip">
+<string>The lower bound of the energy range for the incoming particle (GeV)</string>
+</property>
+</widget>
+</item>
+<item row="3" column="1">
+<widget class="QLineEdit" name="lineErangeLow">
+<property name="toolTip">
+<string>The lower bound of the energy range for the incoming particle (GeV)</string>
+</property>
+</widget>
+</item>
+
+<item row="4" column="0">
+<widget class="QLabel" name="lblErangeHigh">
+<property name="text">
+<string>Energy High (ERANGEHIGH)</string>
+</property>
+<property name="toolTip">
+<string>The upper bound of the energy range for the incoming particle (GeV)</string>
+</property>
+</widget>
+</item>
+<item row="4" column="1">
+<widget class="QLineEdit" name="lineErangeHigh">
+<property name="toolTip">
+<string>The upper bound of the energy range for the incoming particle (GeV)</string>
+</property>
+</widget>
+</item>
+
+<item row="5" column="0">
+<widget class="QLabel" name="lblThetapLow">
+<property name="text">
+<string>Zenith Angle Low (THETAPLOW)</string>
+</property>
+<property name="toolTip">
+<string>The lower bound of the zenith angle range (degrees)</string>
+</property>
+</widget>
+</item>
+<item row="5" column="1">
+<widget class="QLineEdit" name="lineThetapLow">
+<property name="toolTip">
+<string>The lower bound of the zenith angle range (degrees)</string>
+</property>
+</widget>
+</item>
+
+<item row="6" column="0">
+<widget class="QLabel" name="lblThetapHigh">
+<property name="text">
+<string>Zenith Angle High (THETAPHIGH)</string>
+</property>
+<property name="toolTip">
+<string>The upper bound of the zenith angle range (degrees)</string>
+</property>
+</widget>
+</item>
+<item row="6" column="1">
+<widget class="QLineEdit" name="lineThetapHigh">
+<property name="toolTip">
+<string>The upper bound of the zenith angle range (degrees)</string>
+</property>
+</widget>
+</item>
+
+<item row="7" column="0">
+<widget class="QLabel" name="lblPhiLow">
+<property name="text">
+<string>Azimuth Angle Low (PHILOW)</string>
+</property>
+<property name="toolTip">
+<string>The lower bound of the azimuth angle range (degrees)</string>
+</property>
+</widget>
+</item>
+<item row="7" column="1">
+<widget class="QLineEdit" name="linePhiLow">
+<property name="toolTip">
+<string>The lower bound of the azimuth angle range (degrees)</string>
+</property>
+</widget>
+</item>
+
+<item row="8" column="0">
+<widget class="QLabel" name="lblPhiHigh">
+<property name="text">
+<string>Azimuth Angle High (PHIHIGH)</string>
+</property>
+<property name="toolTip">
+<string>The upper bound of the azimuth angle range (degrees)</string>
+</property>
+</widget>
+</item>
+<item row="8" column="1">
+<widget class="QLineEdit" name="linePhiHigh">
+<property name="toolTip">
+<string>The upper bound of the azimuth angle range (degrees)</string>
+</property>
+</widget>
+</item>
+
+<item row="9" column="0">
+<widget class="QLabel" name="lblSeed1">
+<property name="text">
+<string>Random Seed 1 (SEED1)</string>
+</property>
+<property name="toolTip">
+<string>First random number seed for the simulation</string>
+</property>
+</widget>
+</item>
+<item row="9" column="1">
+<widget class="QLineEdit" name="lineSeed1">
+<property name="toolTip">
+<string>First random number seed for the simulation</string>
+</property>
+</widget>
+</item>
+
+<item row="10" column="0">
+<widget class="QLabel" name="lblSeed2">
+<property name="text">
+<string>Random Seed 2 (SEED2)</string>
+</property>
+<property name="toolTip">
+<string>Second random number seed for the simulation</string>
+</property>
+</widget>
+</item>
+<item row="10" column="1">
+<widget class="QLineEdit" name="lineSeed2">
+<property name="toolTip">
+<string>Second random number seed for the simulation</string>
+</property>
+</widget>
+</item>
+
+</layout>
+</widget>
+</item>
+<item>
+<widget class="QDialogButtonBox" name="buttonBox">
+<property name="standardButtons">
+<set>QDialogButtonBox::Ok|QDialogButtonBox::Cancel</set>
+</property>
+</widget>
+</item>
+</layout>
+</widget>
+<resources/>
+<connections/>
 </ui>
