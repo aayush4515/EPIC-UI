@@ -38,10 +38,10 @@ static void generateCorsikaFile(const CorsikaParams &p,
     
     std::ifstream in(templatePath);
     if (!in.is_open()){
-        // create a new file called corsika_template.inp
-        std::ofstream tmpl("corsika_template.inp");
+        // create a new file called corsika_template.steer
+        std::ofstream tmpl("corsika_template.steer");
         if (!tmpl.is_open()) {
-            throw std::runtime_error("Failed to create corsika_template.inp");
+            throw std::runtime_error("Failed to create corsika_template.steer");
         }
 
         // Optional: write default template contents
@@ -49,9 +49,9 @@ static void generateCorsikaFile(const CorsikaParams &p,
         tmpl.close();
 
         // reopen the newly created template file
-        in.open("corsika_template.inp");
+        in.open("corsika_template.steer");
         if (!in.is_open()) {
-            throw std::runtime_error("Failed to reopen corsika_template.inp");
+            throw std::runtime_error("Failed to reopen corsika_template.steer");
         }
     }
 
@@ -114,11 +114,11 @@ void CORSIKA_INPUT::onGenerate()
         return;
     }
 
-    std::string outputPath = "corsika_inputs/corsika_run_" + std::to_string(nrunner) + ".inp";
+    std::string outputPath = "corsika_inputs/corsika_run_" + std::to_string(nrunner) + ".steer";
 
     try {
         CorsikaParams params { nshow, prmpar, erange, nrunner };
-        generateCorsikaFile(params, "corsika_template.inp", outputPath);
+        generateCorsikaFile(params, "corsika_template.steer", outputPath);
         QMessageBox::information(this, "Done",
             QString("File written to:\n%1").arg(QString::fromStdString(outputPath)));
         accept();  // close the dialog on success
