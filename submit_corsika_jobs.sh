@@ -5,7 +5,7 @@
 # --- Configuration (edit these) ----------------------------------------------
 
 # TODO: Is this the right path???
-CORSIKA_EXE="$HOME/Downloads/corsika-78050/run/corsika78050Linux_EPOS_urqmd"   # Full path to your CORSIKA binary
+CORSIKA_EXE="$HOME/corsika-78050/run/corsika78050Linux_EPOS_urqmd"   # Full path to your CORSIKA binary
 INPUT_DIR="/home/eu-physics3/EPIC-UI/build/corsika_inputs"         # Directory containing .steer files
 INPUT_EXT="steer"                             # Input file extension
 
@@ -68,7 +68,7 @@ echo "Started at : \$(date)"
 squeue -u $USER
 sacct -u $USER --format=JobID,JobName,State,ExitCode,Elapsed
 
-cd "$HOME/Downloads/corsika-78050/run"
+cd "$HOME/corsika-78050/run"
 "${CORSIKA_EXE}" < "${INPUT_FILE} > output.txt"
 
 scp ${worker_node}:${file_path}DAT0000000001 ${controller_path}
