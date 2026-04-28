@@ -6,12 +6,11 @@
 
 # TODO: Is this the right path???
 CORSIKA_EXE="$HOME/corsika-78050/run/corsika78050Linux_EPOS_urqmd"   # Full path to your CORSIKA binary
-INPUT_DIR="/home/eu-physics3/EPIC-UI/build/corsika_inputs"         # Directory containing .inp files
-INPUT_EXT="inp"                             # Input file extension
+INPUT_DIR="/home/eu-physics3/EPIC-UI/build/corsika_inputs"         # Directory containing .steer files
+INPUT_EXT="steer"                             # Input file extension
 
-OUTPUT_DIR="../build/output"                # Directory for CORSIKA output files
-LOG_DIR="../build/logs"                     # Directory for SLURM stdout/stderr logs
-
+OUTPUT_DIR="/home/eu-physics3/EPIC-UI/build/output"                # Directory for CORSIKA output files
+LOG_DIR="/home/eu-physics3/EPIC-UI/build/logs"                     # Directory for SLURM stdout/stderr logs
 
 # TODO: Do we actually need these?
 # SLURM settings
@@ -66,9 +65,14 @@ echo "Input file : ${INPUT_FILE}"
 echo "Output dir : ${OUTPUT_DIR}"
 echo "Started at : \$(date)"
 
-cd "${OUTPUT_DIR}"
+squeue -u $USER
+sacct -u $USER --format=JobID,JobName,State,ExitCode,Elapsed
 
-"${CORSIKA_EXE}" < "${INPUT_FILE}"
+cd "$HOME/corsika-78050/run"
+"${CORSIKA_EXE}" < "${INPUT_FILE} > output.txt"
+
+scp ${worker_node}:${file_path}DAT0000000001 ${controller_path}
+scp ${worker_node}:${file_path}DAT0000000001.long ${controller_path}
 
 EXIT_CODE=\$?
 echo "Finished at: \$(date)"
