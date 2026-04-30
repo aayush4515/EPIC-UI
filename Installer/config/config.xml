@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>EPIC</Name>
+    <Version>1.0.0</Version>
+    <Title>EPIC Installer Installer</Title>
+    <Publisher>Team 67</Publisher>
+    <StartMenuDir>Super App</StartMenuDir>
+    <TargetDir>@HomeDir@/EPIC_Package</TargetDir>
+</Installer>

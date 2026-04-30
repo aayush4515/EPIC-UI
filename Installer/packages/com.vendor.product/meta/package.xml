@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>EPIC Applicaiton</DisplayName>
+    <Description>This is the main EPIC application.</Description>
+    <Version>0.1.0-1</Version>
+    <ReleaseDate>2026-05-01</ReleaseDate>
+    <Licenses>
+        <License name="EPIC License Agreement" file="license.txt" />
+    </Licenses>
+    <!-- <Default>script</Default>
+    <Script>installscript.qs</Script> -->
+    <!-- <UserInterfaces>
+        <UserInterface>page.ui</UserInterface>
+    </UserInterfaces> -->
+</Package>
